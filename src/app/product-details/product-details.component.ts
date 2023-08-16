@@ -17,9 +17,9 @@ export class ProductDetailsComponent implements OnInit{
     private route: ActivatedRoute,
     private cardService: CardService) { }
 
-  addToCard(product:Product){
+  addToCard(product : Product){
     this.cardService.addToCard(product);
-    window.alert('Your product has been addded to the card')
+    window.alert('Your product has been added to the card!')
   }
   ngOnInit() {
     // First get the product id from the current route.

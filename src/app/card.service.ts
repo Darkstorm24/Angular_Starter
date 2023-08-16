@@ -11,7 +11,7 @@ export class CardService {
   items: Product[] = [];
 
   addToCard(product : Product){
-    this.items.push();
+    this.items.push(product);
   }
 
   getItems(){

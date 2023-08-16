@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CardService } from '../card.service';
 
 @Component({
   selector: 'app-card',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
+
+  items = this.cardService.getItems()
+
+  constructor(
+    private cardService: CardService
+  ){}
 
 }
