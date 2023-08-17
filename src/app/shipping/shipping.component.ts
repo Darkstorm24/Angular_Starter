@@ -11,9 +11,9 @@ export class ShippingComponent implements OnInit{
 
   constructor( private cardService : CardService){}
 
-  shippingCosts! : Observable<{type:string, price:number }[]>;
+  shippingCosts! : Observable<{ type:string, price:number }[]>;
 
-ngOnInit():void{
+ngOnInit(): void {
   this.shippingCosts = this.cardService.getShippingPrices();
 }
 
